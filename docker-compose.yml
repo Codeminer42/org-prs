@@ -1,6 +1,8 @@
 web:
   build: .
   working_dir: /srv/www
+  environment:
+    PORT: 3000
   volumes:
    - ./:/srv/www
   ports:
