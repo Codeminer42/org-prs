@@ -8,6 +8,6 @@ app.use(morgan('dev'));
 
 Router.init(app);
 
-app.listen(process.env.PORT || 4000, () => {
+app.listen(process.env.PORT, () => {
   console.log('Listening...');
 });
