@@ -1,0 +1,8 @@
+web:
+  build: .
+  working_dir: /srv/www
+  volumes:
+   - ./:/srv/www
+  ports:
+   - 3000:3000
+  command: bash -c 'npm i; nodemon index.js'
