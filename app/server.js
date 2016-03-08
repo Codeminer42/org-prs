@@ -1,6 +1,6 @@
 import express from 'express';
 import morgan from 'morgan';
-import Router from './router'
+import Router from './router';
 
 const app = express();
 

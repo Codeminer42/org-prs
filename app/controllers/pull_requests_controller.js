@@ -1,14 +1,11 @@
-const GitHubApi = require('github');
-const github = new GitHubApi({
-  version: '3.0.0',
-});
+import GithubService from '../services/github_service';
 
 export default class PullRequestsController {
   static index(req, res) {
-    github.user.getFollowingFromUser({
-        user: "lucasrenan"
-    }, function(err, dataResult) {
-        return res.json(dataResult);
+    GithubService.openPullRequests((err, prs) => {
+      if (err) { return res.json(err) }
+
+      return res.json(prs)
     });
   }
 }

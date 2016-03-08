@@ -1,4 +1,4 @@
-import PullRequestsController from './controllers/pull_requests_controller'
+import PullRequestsController from './controllers/pull_requests_controller';
 
 export default class Router {
   static init(app) {
