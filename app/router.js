@@ -1,4 +1,4 @@
-import { middleware as cacheFor } from 'apicache';
+import cacheFor from '../config/cache';
 import PullRequestsController from './controllers/pull_requests_controller';
 
 export default class Router {
