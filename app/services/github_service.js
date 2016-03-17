@@ -21,7 +21,7 @@ function allOpenPullRequests (repos, callback) {
       repo: repo.name,
       state: 'open'
     }, (err, resultPrs) => {
-      if (err) { return cb(err) }
+      if (err) { return cb(err); }
 
       if (resultPrs.length) {
         async.each(resultPrs, (pr, iteratorCb) => {
@@ -31,15 +31,15 @@ function allOpenPullRequests (repos, callback) {
             url: pr.html_url,
             user: pr.user.login
           });
-        }, cb)
+        }, cb);
       }
 
-      return cb()
+      return cb();
     })
   }, (err) => {
     if (err) { return callback(err) }
 
-    return callback(null, prs)
+    return callback(null, prs);
   })
 }
 
@@ -53,6 +53,6 @@ export default class GithubService {
     async.waterfall([
       reposFromOrg,
       allOpenPullRequests
-    ], callback)
+    ], callback);
   }
 }
