@@ -12,5 +12,8 @@ export default function formatMessage (prs) {
     });
   });
 
-  return { attachments: formattedAttachments };
+  return {
+    'response_type': 'in_channel',
+    'attachments': formattedAttachments
+  };
 }
