@@ -1,7 +1,7 @@
 import async from 'async';
 
 export default function formatMessage (prs) {
-  let formattedAttachments = []
+  let formattedAttachments = [];
 
   async.each(prs, (pr, iterator) => {
     formattedAttachments.push({

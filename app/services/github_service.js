@@ -13,7 +13,7 @@ function reposFromOrg (callback) {
 }
 
 function allOpenPullRequests (repos, callback) {
-  var prs = []
+  var prs = [];
 
   async.each(repos, (repo, cb) => {
     github.pullRequests.getAll({
@@ -35,12 +35,12 @@ function allOpenPullRequests (repos, callback) {
       }
 
       return cb();
-    })
+    });
   }, (err) => {
-    if (err) { return callback(err) }
+    if (err) { return callback(err); }
 
     return callback(null, prs);
-  })
+  });
 }
 
 export default class GithubService {
