@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitortalaia/org-prs.git"
+    "url": "git+https://github.com/Codeminer42/org-prs.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vitortalaia/org-prs/issues"
+    "url": "https://github.com/Codeminer42/org-prs/issues"
   },
-  "homepage": "https://github.com/vitortalaia/org-prs#readme",
+  "homepage": "https://github.com/Codeminer42/org-prs#readme",
   "dependencies": {
     "apicache": "0.0.12",
     "async": "^1.5.2",
