@@ -1,11 +1,10 @@
 {
   "name": "org-prs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Never leave open PRs!",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint app/",
     "test": "NODE_ENV=test mocha --recursive --compilers js:babel-core/register"
   },
